@@ -21,7 +21,7 @@ function closeMenu() {
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="#" class="flex items-center group">
-          <img src="/pst-logo-2-rectangle.png" alt="Pine Street Technology" class="h-14 md:h-20 transition-all group-hover:brightness-110 group-hover:scale-105" />
+          <img src="/pst-logo-2-rectangle.png" alt="Pine Street Technology" class="h-14 md:h-14 transition-all group-hover:brightness-110 group-hover:scale-105" />
         </a>
 
         <!-- Desktop Nav -->
