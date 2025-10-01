@@ -25,7 +25,7 @@
     "blurb": "Python tool for managing env files in local development across a team.",
     "liveUrl": "https://github.com/PineStreetTechnology/doteq",
     "tech": ["Python", "CLI"],
-    "image": "/public/python-logo.jpg"
+    "image": "/python-logo.jpg"
   },
   {
     "title": "AutoQuery VIN Decoder (WIP)",
