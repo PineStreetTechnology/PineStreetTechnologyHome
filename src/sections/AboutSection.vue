@@ -87,7 +87,7 @@ import aboutData from '../content/about.json'
                 <!-- Tech Stack Pills -->
                 <div class="flex flex-wrap gap-2 pt-4">
                   <span
-                    v-for="tech in ['Laravel', 'Vue', 'Python', 'Tailwind', 'MySQL', 'AWS']"
+                    v-for="tech in ['Laravel', 'Vue', 'Python', 'Tailwind', 'MySQL', 'React']"
                     :key="tech"
                     class="px-3 py-1.5 bg-pine-50 dark:bg-pine-900/30 text-pine-700 dark:text-pine-300 rounded-lg text-sm font-medium border border-pine-200 dark:border-pine-800 hover:scale-105 transition-transform"
                   >

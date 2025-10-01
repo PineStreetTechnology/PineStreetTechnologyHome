@@ -47,8 +47,44 @@ onMounted(() => {
 
         <!-- Description with better typography -->
         <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-          Boutique engineering studio crafting <span class="text-pine-600 dark:text-pine-400 font-semibold">practical software</span> that ships fast and delivers real impact.
+          Modern engineering studio crafting <span class="text-pine-600 dark:text-pine-400 font-semibold">practical software</span> that ships fast and delivers real impact.
         </p>
+        
+        <!-- Key value props with icons -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-xl">
+            <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-2xl transition-all"></div>
+            <div class="relative">
+              <div class="w-12 h-12 bg-pine-100 dark:bg-pine-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <i class="fas fa-rocket text-pine-600 dark:text-pine-400 text-xl"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Ship Fast</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Rapid development without compromising quality</p>
+            </div>
+          </div>
+          
+          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-xl">
+            <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-2xl transition-all"></div>
+            <div class="relative">
+              <div class="w-12 h-12 bg-pine-100 dark:bg-pine-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <i class="fas fa-code text-pine-600 dark:text-pine-400 text-xl"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Clean Code</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Maintainable architecture built to last</p>
+            </div>
+          </div>
+          
+          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-xl">
+            <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-2xl transition-all"></div>
+            <div class="relative">
+              <div class="w-12 h-12 bg-pine-100 dark:bg-pine-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <i class="fas fa-chart-line text-pine-600 dark:text-pine-400 text-xl"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Real Impact</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Solutions that drive measurable results</p>
+            </div>
+          </div>
+        </div>
 
         <!-- CTA Buttons with enhanced styling -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
