@@ -44,10 +44,10 @@ const currentYear = new Date().getFullYear()
                 :href="siteData.socials.github"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-slate-600 dark:text-slate-400 hover:text-pine-500 dark:hover:text-pine-400 transition-colors text-xl"
+                class="text-slate-600 dark:text-slate-400 hover:text-pine-500 dark:hover:text-pine-400 transition-colors "
                 aria-label="GitHub"
               >
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i> <span class="text-md text-slate-600 dark:text-slate-400">GitHub</span>
               </a>
               <a
                 v-if="siteData.socials.linkedin"
@@ -57,7 +57,7 @@ const currentYear = new Date().getFullYear()
                 class="text-slate-600 dark:text-slate-400 hover:text-pine-500 dark:hover:text-pine-400 transition-colors text-xl"
                 aria-label="LinkedIn"
               >
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
               </a>
             </div>
             <a
