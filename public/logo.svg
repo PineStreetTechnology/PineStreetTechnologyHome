@@ -1,0 +1,30 @@
+<svg viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title>Pine Street Technology</title>
+  <desc>Wordmark with a stylized pine tree and tech nodes</desc>
+  <defs>
+    <linearGradient id="pineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64a07a"/>
+      <stop offset="100%" stop-color="#2f6d3a"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Pine tree built from stacked triangles -->
+    <polygon points="90,22 22,130 158,130" fill="url(#pineGrad)"/>
+    <polygon points="90,10 36,100 144,100" fill="#3a7f54" opacity="0.9"/>
+    <polygon points="90,0 50,70 130,70" fill="#2f6d3a" opacity="0.95"/>
+    <!-- Trunk -->
+    <rect x="82" y="130" width="16" height="26" rx="2" fill="#285c32"/>
+    <!-- Subtle tech nodes + traces -->
+    <g stroke="#1a3d22" stroke-width="2" fill="#c8e6d1" opacity="0.9">
+      <circle cx="90" cy="92" r="4"/>
+      <circle cx="70" cy="112" r="3"/>
+      <circle cx="110" cy="112" r="3"/>
+      <path d="M90 92 L70 112"/>
+      <path d="M90 92 L110 112"/>
+    </g>
+    <!-- Wordmark -->
+    <text x="190" y="108" font-size="54" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" fill="#0F172A" letter-spacing="0.2">
+      Pine Street <tspan fill="#2f6d3a">Technology</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "IBC Roofing Commission Tracking",
+    "blurb": "Roofing sales and commission tracking integrated with AccuLynx; dashboards and exports of commission data.",
+    "liveUrl": "https://ibccommissions.com/",
+    "tech": ["Laravel", "Vue", "MySQL"],
+    "image": "https://placehold.co/600x400/2f6d3a/ffffff?text=IBC+Commissions"
+  },
+  {
+    "title": "FieldwiseCRM",
+    "blurb": "Complete Sales Operations Platform: territory management, lead tracking, commission calculations, subscription billing.",
+    "liveUrl": "https://fieldwisecrm.com/",
+    "tech": ["Laravel", "Vue", "Tailwind", "Maps"],
+    "image": "https://placehold.co/600x400/2f6d3a/ffffff?text=FieldwiseCRM"
+  },
+  {
+    "title": "BudMath",
+    "blurb": "Convert medical marijuana allowance decimals into familiar weights (eighths, quarters, prerolls, etc.).",
+    "liveUrl": "https://budmath.com/",
+    "tech": ["Vue", "Tailwind"],
+    "image": "https://placehold.co/600x400/2f6d3a/ffffff?text=BudMath"
+  },
+  {
+    "title": "Dot EQ",
+    "blurb": "Python tool for managing env files in local development across a team.",
+    "tech": ["Python"],
+    "image": "https://placehold.co/600x400/2f6d3a/ffffff?text=Dot+EQ"
+  },
+  {
+    "title": "iRacing Race Scheduler (WIP)",
+    "blurb": "Track upcoming races and favorites for the sim racing community.",
+    "tech": ["Laravel", "Vue", "Jobs"],
+    "image": "https://placehold.co/600x400/2f6d3a/ffffff?text=iRacing+Scheduler"
+  }
+]
