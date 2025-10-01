@@ -38,15 +38,19 @@ async function submit(e: Event) {
 </script>
 
 <template>
-  <section id="contact" class="py-20 bg-surface-light dark:bg-surface-dark scroll-mt-20">
+  <section id="contact" class="py-24 bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 scroll-mt-20">
     <div class="container mx-auto px-4">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-slate-900 dark:text-slate-100">
-          Get in Touch
-        </h2>
-        <p class="text-center text-slate-600 dark:text-slate-400 mb-12">
-          Have a project in mind? Let's talk about how we can help bring your ideas to life.
-        </p>
+      <div class="max-w-4xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-pine-700 dark:from-slate-100 dark:to-pine-400 bg-clip-text text-transparent">
+            Let's Build Something
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-pine-500 to-pine-600 mx-auto rounded-full mb-4"></div>
+          <p class="text-lg text-slate-600 dark:text-slate-400">
+            Have a project in mind? Let's make it happen.
+          </p>
+        </div>
 
         <!-- Success Message -->
         <Transition
@@ -96,95 +100,105 @@ async function submit(e: Event) {
           </div>
         </Transition>
 
-        <!-- Contact Form -->
-        <form ref="formRef" @submit="submit" class="space-y-6">
-          <!-- Honeypot for spam protection -->
-          <input
-            type="text"
-            name="company"
-            class="hidden"
-            tabindex="-1"
-            autocomplete="off"
-            aria-hidden="true"
-          />
+        <!-- Contact Form Card -->
+        <div class="relative">
+          <!-- Decorative elements -->
+          <div class="absolute -top-6 -right-6 w-32 h-32 bg-pine-500/10 rounded-full blur-3xl"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-pine-400/10 rounded-full blur-3xl"></div>
+          
+          <div class="relative bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-700 p-8 md:p-10">
+            <form ref="formRef" @submit="submit" class="space-y-5">
+              <!-- Honeypot for spam protection -->
+              <input
+                type="text"
+                name="company"
+                class="hidden"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
 
-          <!-- Name -->
-          <div>
-            <label for="name" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">
-              Name <span class="text-red-500">*</span>
-            </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-pine-500 focus:border-transparent transition-all"
-              placeholder="Your name"
-            />
+              <div class="grid md:grid-cols-2 gap-5">
+                <!-- Name -->
+                <div>
+                  <label for="name" class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
+                    Name <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-pine-500 focus:border-pine-500 transition-all"
+                    placeholder="John Doe"
+                  />
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label for="email" class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
+                    Email <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-pine-500 focus:border-pine-500 transition-all"
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-pine-500 focus:border-pine-500 transition-all resize-none"
+                  placeholder="Tell us about your project..."
+                ></textarea>
+              </div>
+
+              <!-- Privacy Notice -->
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                We respect your privacy. Your information is only used to respond to your message.
+              </p>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                :disabled="status === 'sending'"
+                class="group w-full relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-pine-600 hover:bg-pine-700 disabled:bg-pine-400 disabled:cursor-not-allowed text-white font-bold rounded-2xl transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-pine-500/50 focus:outline-none focus:ring-4 focus:ring-pine-500/50 overflow-hidden"
+              >
+                <span class="absolute inset-0 bg-gradient-to-r from-pine-500 to-pine-700 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <i v-if="status === 'idle' || status === 'error'" class="relative far fa-paper-plane"></i>
+                <i v-else-if="status === 'sending'" class="relative fas fa-spinner fa-spin"></i>
+                <i v-else-if="status === 'sent'" class="relative fas fa-check"></i>
+
+                <span v-if="status === 'idle' || status === 'error'" class="relative">Send Message</span>
+                <span v-else-if="status === 'sending'" class="relative">Sending...</span>
+                <span v-else-if="status === 'sent'" class="relative">Sent!</span>
+              </button>
+
+              <!-- Mailto Fallback -->
+              <p class="text-center text-sm text-slate-600 dark:text-slate-400">
+                Or email us at 
+                <a
+                  :href="`mailto:${siteData.email}`"
+                  class="text-pine-600 dark:text-pine-400 hover:text-pine-700 dark:hover:text-pine-300 font-semibold transition-colors"
+                >
+                  {{ siteData.email }}
+                </a>
+              </p>
+            </form>
           </div>
-
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">
-              Email <span class="text-red-500">*</span>
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-pine-500 focus:border-transparent transition-all"
-              placeholder="your.email@example.com"
-            />
-          </div>
-
-          <!-- Message -->
-          <div>
-            <label for="message" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">
-              Message <span class="text-red-500">*</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              required
-              class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-pine-500 focus:border-transparent transition-all resize-none"
-              placeholder="Tell us about your project..."
-            ></textarea>
-          </div>
-
-          <!-- Privacy Notice -->
-          <p class="text-xs text-slate-500 dark:text-slate-400">
-            We only use your information to respond to your message. We don't sell or share your details with third parties. 
-            By submitting, you consent to this processing.
-          </p>
-
-          <!-- Submit Button -->
-          <button
-            type="submit"
-            :disabled="status === 'sending'"
-            class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-pine-500 hover:bg-pine-600 disabled:bg-pine-400 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all focus:outline-none focus:ring-2 focus:ring-pine-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
-          >
-            <i v-if="status === 'idle' || status === 'error'" class="far fa-paper-plane"></i>
-            <i v-else-if="status === 'sending'" class="fas fa-spinner fa-spin"></i>
-            <i v-else-if="status === 'sent'" class="fas fa-check"></i>
-
-            <span v-if="status === 'idle' || status === 'error'">Send Message</span>
-            <span v-else-if="status === 'sending'">Sending...</span>
-            <span v-else-if="status === 'sent'">Sent!</span>
-          </button>
-
-          <!-- Mailto Fallback -->
-          <p class="text-center text-sm text-slate-600 dark:text-slate-400">
-            Or email us directly at 
-            <a
-              :href="`mailto:${siteData.email}`"
-              class="text-pine-600 dark:text-pine-400 hover:underline font-medium"
-            >
-              {{ siteData.email }}
-            </a>
-          </p>
-        </form>
+        </div>
       </div>
     </div>
   </section>

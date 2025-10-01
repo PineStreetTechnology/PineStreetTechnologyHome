@@ -20,9 +20,8 @@ function closeMenu() {
     <nav class="container mx-auto px-4 py-4" aria-label="Main navigation">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-3 group">
-          <img src="/logo-mark.svg" alt="Pine Street Technology" class="h-10 w-10 transition-transform group-hover:scale-110" />
-          <span class="font-bold text-lg hidden sm:inline text-slate-900 dark:text-slate-100">Pine Street Technology</span>
+        <a href="#" class="flex items-center group">
+          <img src="/pst-logo-2-rectangle.png" alt="Pine Street Technology" class="h-12 transition-all group-hover:brightness-110" />
         </a>
 
         <!-- Desktop Nav -->

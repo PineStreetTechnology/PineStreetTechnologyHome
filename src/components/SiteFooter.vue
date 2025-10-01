@@ -11,11 +11,10 @@ const currentYear = new Date().getFullYear()
         <div class="grid md:grid-cols-3 gap-8 mb-8">
           <!-- Brand -->
           <div>
-            <div class="flex items-center gap-3 mb-4">
-              <img src="/logo-mark.svg" alt="Pine Street Technology" class="h-10 w-10" />
-              <span class="font-bold text-lg text-slate-900 dark:text-slate-100">Pine Street Technology</span>
+            <div class="mb-4">
+              <img src="/pst-logo-2-rectangle.png" alt="Pine Street Technology" class="h-10" />
             </div>
-            <p class="text-slate-600 dark:text-slate-400 text-sm">
+            <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xs">
               {{ siteData.tagline }}
             </p>
           </div>
