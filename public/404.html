@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><script>
+(function(){
+  var l=window.location;
+  if (l.search[1]==='/'){
+    var decoded=l.search.slice(1).split('&').map(s=>s.replace(/~and~/g,'&')).join('?');
+    window.history.replaceState(null,null,decoded+l.hash);
+  }
+}());
+</script></head><body></body></html>
