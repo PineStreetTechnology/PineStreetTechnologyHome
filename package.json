@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "rm -rf docs && npm run build && git add docs public/404.html vite.config.ts && (git commit -m \"deploy\" || echo \"No changes to commit\") && git push"
   },
   "dependencies": {
     "vue": "^3.5.21"
