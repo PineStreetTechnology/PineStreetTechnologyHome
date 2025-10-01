@@ -4,39 +4,39 @@
     "blurb": "Roofing sales and commission tracking integrated with AccuLynx; dashboards and exports of commission data.",
     "liveUrl": "https://ibccommissions.com/",
     "tech": ["Laravel", "Vue", "MySQL", "Tailwind", "JavaScript", "PHP"],
-    "image": "/PineStreetTechnologyHome/ibcroofing-screenshot.png"
+    "image": "/ibcroofing-screenshot.png"
   },
   {
     "title": "FieldwiseCRM",
     "blurb": "Complete Sales Operations Platform: territory management, lead tracking, commission calculations, subscription billing.",
     "liveUrl": "https://fieldwisecrm.com/",
     "tech": ["Laravel", "Vue", "Tailwind", "Maps", "MySQL","JavaScript", "PHP"],
-    "image": "/PineStreetTechnologyHome/fieldwisecrm-screenshot.png"
+    "image": "/fieldwisecrm-screenshot.png"
   },
   {
     "title": "BudMath",
     "blurb": "Easily convert medical marijuana allowance decimals into familiar weights (eighths, quarters, prerolls, etc.). So you know how much you can purchase each time.",
     "liveUrl": "https://budmath.com/",
     "tech": ["React", "Tailwind", "CSS", "JavaScript"],
-    "image": "/PineStreetTechnologyHome/budmath-screenshot.png"
+    "image": "/budmath-screenshot.png"
   },
   {
     "title": "Dot EQ",
     "blurb": "Python tool for managing env files in local development across a team.",
     "liveUrl": "https://github.com/PineStreetTechnology/doteq",
     "tech": ["Python", "CLI"],
-    "image": "/PineStreetTechnologyHome/public/python-logo.jpg"
+    "image": "/public/python-logo.jpg"
   },
   {
     "title": "AutoQuery VIN Decoder (WIP)",
     "blurb": "Decode VINs into vehicle information from your clipboard or an app. Combined with our Chrome Extension, get real time VIN lookup for the vehicle on the page",
     "tech": ["Dotnet", "WPF", "Chrome Extension", "Windows Service"],
-    "image": "/PineStreetTechnologyHome/autoquery-logo.png"
+    "image": "/autoquery-logo.png"
   },
   {
     "title": "iRacing Race Scheduler (WIP)",
     "blurb": "Track upcoming races and favorites for the sim racing community.",
     "tech": ["Laravel", "Vue", "Tailwind", "MySQL", "JavaScript", "PHP"],
-    "image": "/PineStreetTechnologyHome/iracing-logo.png"
+    "image": "/iracing-logo.png"
   }
 ]
