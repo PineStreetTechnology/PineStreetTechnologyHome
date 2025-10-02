@@ -29,28 +29,28 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
-  <section id="projects" class="py-20 bg-slate-50 dark:bg-slate-900 scroll-mt-20">
+  <section id="projects" class="py-24 bg-slate-50 dark:bg-slate-900 scroll-mt-20">
     <div class="container mx-auto px-4">
       <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-slate-900 to-pine-700 dark:from-slate-100 dark:to-pine-400 bg-clip-text text-transparent">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-pine-700 dark:from-slate-100 dark:to-pine-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-pine-500 to-pine-600 mx-auto rounded-full mb-3"></div>
-          <p class="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <div class="w-24 h-1 bg-gradient-to-r from-pine-500 to-pine-600 mx-auto rounded-full mb-4"></div>
+          <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Real software solutions delivering measurable impact for businesses.
           </p>
         </div>
 
         <!-- Tech Filter -->
-        <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <div class="flex flex-wrap justify-center gap-2 mb-12">
           <button
             v-for="tech in allTechs"
             :key="tech"
             @click="selectedTech = tech"
             :class="[
-              'px-3 py-1.5 rounded-lg font-medium transition-all text-sm',
+              'px-4 py-2 rounded-lg font-medium transition-all',
               selectedTech === tech
                 ? 'bg-pine-500 text-white shadow-lg'
                 : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600'
@@ -63,12 +63,13 @@ const filteredProjects = computed(() => {
         <!-- Projects Grid -->
         <TransitionGroup
           name="list"
+          tag="div"
           class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <article
             v-for="project in filteredProjects"
             :key="project.title"
-            class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200 dark:border-slate-700"
+            class="group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700"
           >
             <!-- Gradient overlay on hover -->
             <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/5 group-hover:to-pine-600/10 transition-all duration-300 pointer-events-none z-10"></div>
@@ -88,20 +89,20 @@ const filteredProjects = computed(() => {
             </div>
 
             <!-- Project Content -->
-            <div class="relative p-5 z-20">
-              <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-slate-100 group-hover:text-pine-600 dark:group-hover:text-pine-400 transition-colors">
+            <div class="relative p-6 z-20">
+              <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100 group-hover:text-pine-600 dark:group-hover:text-pine-400 transition-colors">
                 {{ project.title }}
               </h3>
-              <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">
+              <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
                 {{ project.blurb }}
               </p>
 
               <!-- Tech Tags -->
-              <div class="flex flex-wrap gap-1.5 mb-4">
+              <div class="flex flex-wrap gap-2 mb-6">
                 <span
                   v-for="tech in project.tech"
                   :key="tech"
-                  class="px-2 py-0.5 bg-pine-50 dark:bg-pine-900/30 text-pine-700 dark:text-pine-300 rounded text-xs font-medium border border-pine-200 dark:border-pine-800"
+                  class="px-3 py-1 bg-pine-50 dark:bg-pine-900/30 text-pine-700 dark:text-pine-300 rounded-lg text-xs font-semibold border border-pine-200 dark:border-pine-800"
                 >
                   {{ tech }}
                 </span>
