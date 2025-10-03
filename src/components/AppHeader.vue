@@ -17,20 +17,20 @@ function closeMenu() {
 
 <template>
   <header class="sticky top-0 z-40 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700">
-    <nav class="container mx-auto px-4 py-4" aria-label="Main navigation">
+    <nav class="container mx-auto px-4 py-3" aria-label="Main navigation">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="#" class="flex items-center group">
-          <img src="/pst-logo-2-rectangle.png" alt="Pine Street Technology" class="h-14 md:h-14 transition-all group-hover:brightness-110 group-hover:scale-105" />
+          <img src="/pst-logo-2-rectangle.png" alt="Pine Street Technology" class="h-10 md:h-12 transition-all group-hover:brightness-110 group-hover:scale-105" />
         </a>
 
         <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center gap-6">
+        <div class="hidden md:flex items-center gap-5">
           <a
             v-for="link in navLinks"
             :key="link.href"
             :href="link.href"
-            class="text-slate-700 dark:text-slate-300 hover:text-pine-500 dark:hover:text-pine-400 font-medium transition-colors"
+            class="text-slate-700 dark:text-slate-300 hover:text-pine-500 dark:hover:text-pine-400 font-medium transition-colors text-sm"
           >
             {{ link.label }}
           </a>

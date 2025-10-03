@@ -95,18 +95,18 @@ onUnmounted(() => {
     <!-- Soft spotlight effect from top -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-pine-100/30 to-transparent dark:from-pine-900/20 dark:to-transparent blur-3xl"></div>
 
-    <div class="container mx-auto px-4 py-20 relative z-10">
-      <div class="max-w-5xl mx-auto">
+    <div class="container mx-auto px-4 py-12 relative z-10">
+      <div class="max-w-4xl mx-auto">
         <!-- Logo with glow effect -->
-        <div class="mb-8 flex justify-center">
+        <div class="mb-5 flex justify-center">
           <div class="relative group">
             <div class="absolute inset-0 bg-pine-500/20 blur-2xl rounded-full group-hover:bg-pine-500/30 transition-all duration-500"></div>
-            <img src="/pst-logo-1-square.png" alt="Pine Street Technology" class="relative h-24 md:h-28 w-auto drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-300" />
+            <img src="/pst-logo-1-square.png" alt="Pine Street Technology" class="relative h-16 md:h-20 w-auto drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-300" />
           </div>
         </div>
 
         <!-- Tagline with gradient text -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-center leading-tight">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center leading-tight">
           <span class="bg-gradient-to-r from-slate-900 via-pine-700 to-slate-900 dark:from-slate-100 dark:via-pine-400 dark:to-slate-100 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
             Build clean, ship fast
           </span>
@@ -115,51 +115,51 @@ onUnmounted(() => {
         </h1>
 
         <!-- Description with better typography -->
-        <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 text-center max-w-3xl mx-auto leading-relaxed">
+        <p class="text-base md:text-lg text-slate-600 dark:text-slate-300 mb-6 text-center max-w-2xl mx-auto leading-relaxed">
           Modern engineering studio crafting <span class="text-pine-600 dark:text-pine-400 font-semibold">practical software</span> that ships fast and delivers real impact.
         </p>
         
         <!-- Key value props with icons -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-4xl mx-auto">
-          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-xl">
-            <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-2xl transition-all"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6 max-w-3xl mx-auto">
+          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-lg">
+            <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-xl transition-all"></div>
             <div class="relative">
-              <div class="w-12 h-12 bg-pine-100 dark:bg-pine-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <i class="fas fa-rocket text-pine-600 dark:text-pine-400 text-lg"></i>
+              <div class="w-10 h-10 bg-pine-100 dark:bg-pine-900/50 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fas fa-rocket text-pine-600 dark:text-pine-400"></i>
               </div>
-              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-1.5 text-sm">Ship Fast</h3>
+              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-1 text-sm">Ship Fast</h3>
               <p class="text-xs text-slate-600 dark:text-slate-400">Rapid development without compromising quality</p>
             </div>
           </div>
           
-          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-xl p-5 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-xl">
+          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-lg">
             <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-xl transition-all"></div>
             <div class="relative">
               <div class="w-10 h-10 bg-pine-100 dark:bg-pine-900/50 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                <i class="fas fa-code text-pine-600 dark:text-pine-400 text-lg"></i>
+                <i class="fas fa-code text-pine-600 dark:text-pine-400"></i>
               </div>
-              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-1.5 text-sm">Clean Code</h3>
+              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-1 text-sm">Clean Code</h3>
               <p class="text-xs text-slate-600 dark:text-slate-400">Maintainable architecture built to last</p>
             </div>
           </div>
           
-          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-xl p-5 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-xl">
+          <div class="group relative bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 transition-all hover:scale-105 hover:shadow-lg">
             <div class="absolute inset-0 bg-gradient-to-br from-pine-500/0 to-pine-600/0 group-hover:from-pine-500/10 group-hover:to-pine-600/10 rounded-xl transition-all"></div>
             <div class="relative">
               <div class="w-10 h-10 bg-pine-100 dark:bg-pine-900/50 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                <i class="fas fa-chart-line text-pine-600 dark:text-pine-400 text-lg"></i>
+                <i class="fas fa-chart-line text-pine-600 dark:text-pine-400"></i>
               </div>
-              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-1.5 text-sm">Real Impact</h3>
+              <h3 class="font-bold text-slate-900 dark:text-slate-100 mb-1 text-sm">Real Impact</h3>
               <p class="text-xs text-slate-600 dark:text-slate-400">Solutions that drive measurable results</p>
             </div>
           </div>
         </div>
 
         <!-- CTA Buttons with enhanced styling -->
-        <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12">
+        <div class="flex flex-col sm:flex-row gap-2.5 justify-center items-center mb-6">
           <a
             href="#projects"
-            class="group relative inline-flex items-center gap-2 px-6 py-3 bg-pine-600 hover:bg-pine-700 text-white font-semibold rounded-xl transition-all hover:scale-105 hover:shadow-xl hover:shadow-pine-500/50 focus:outline-none focus:ring-4 focus:ring-pine-500/50 overflow-hidden text-sm"
+            class="group relative inline-flex items-center gap-2 px-5 py-2.5 bg-pine-600 hover:bg-pine-700 text-white font-semibold rounded-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-pine-500/50 focus:outline-none focus:ring-4 focus:ring-pine-500/50 overflow-hidden text-sm"
           >
             <span class="absolute inset-0 bg-gradient-to-r from-pine-500 to-pine-700 opacity-0 group-hover:opacity-100 transition-opacity"></span>
             <span class="relative">View Projects</span>
@@ -167,7 +167,7 @@ onUnmounted(() => {
           </a>
           <a
             href="#contact"
-            class="group inline-flex items-center gap-2 px-6 py-3 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm hover:bg-white dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 font-semibold rounded-xl transition-all hover:scale-105 hover:shadow-lg border-2 border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-300 dark:focus:ring-slate-600 text-sm"
+            class="group inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm hover:bg-white dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 font-semibold rounded-lg transition-all hover:scale-105 hover:shadow-lg border-2 border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-300 dark:focus:ring-slate-600 text-sm"
           >
             <i class="far fa-envelope group-hover:rotate-12 transition-transform text-xs"></i>
             <span>Get in Touch</span>
@@ -175,7 +175,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Tech stack badges with hover effects -->
-        <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <div class="flex flex-wrap justify-center gap-2 mb-6">
           <span class="group px-3 py-1.5 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-full text-xs font-semibold text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-pine-500 dark:hover:border-pine-500 hover:bg-pine-50 dark:hover:bg-pine-900/30 transition-all cursor-default">
             <i class="fab fa-laravel text-red-500 mr-1"></i>Laravel
           </span>
@@ -194,43 +194,43 @@ onUnmounted(() => {
         </div>
 
         <!-- Social Links with better styling -->
-        <div class="flex justify-center gap-3 mb-6">
+        <div class="flex justify-center gap-2.5 mb-5">
           <a
             v-if="siteData.socials.github"
             :href="siteData.socials.github"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-center w-12 h-12 rounded-full bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm hover:bg-pine-500 dark:hover:bg-pine-600 hover:text-white transition-all hover:scale-110 border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-pine-500/50"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm hover:bg-pine-500 dark:hover:bg-pine-600 hover:text-white transition-all hover:scale-110 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-pine-500/50"
             aria-label="GitHub"
           >
-            <i class="fab fa-github text-xl"></i>
+            <i class="fab fa-github text-lg"></i>
           </a>
           <a
             v-if="siteData.socials.linkedin"
             :href="siteData.socials.linkedin"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-center w-12 h-12 rounded-full bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm hover:bg-pine-500 dark:hover:bg-pine-600 hover:text-white transition-all hover:scale-110 border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-pine-500/50"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm hover:bg-pine-500 dark:hover:bg-pine-600 hover:text-white transition-all hover:scale-110 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-pine-500/50"
             aria-label="LinkedIn"
           >
-            <i class="fab fa-linkedin text-xl"></i>
+            <i class="fab fa-linkedin text-lg"></i>
           </a>
         </div>
         
         <!-- Quick stats -->
-        <div class="flex justify-center gap-8 text-center">
+        <div class="flex justify-center gap-6 text-center">
           <div class="group">
-            <div class="text-2xl font-bold text-pine-600 dark:text-pine-400 group-hover:scale-110 transition-transform">5+</div>
+            <div class="text-xl font-bold text-pine-600 dark:text-pine-400 group-hover:scale-110 transition-transform">5+</div>
             <div class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Projects</div>
           </div>
           <div class="w-px bg-slate-300 dark:bg-slate-700"></div>
           <div class="group">
-            <div class="text-2xl font-bold text-pine-600 dark:text-pine-400 group-hover:scale-110 transition-transform">100%</div>
+            <div class="text-xl font-bold text-pine-600 dark:text-pine-400 group-hover:scale-110 transition-transform">100%</div>
             <div class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Committed</div>
           </div>
           <div class="w-px bg-slate-300 dark:bg-slate-700"></div>
           <div class="group">
-            <div class="text-2xl font-bold text-pine-600 dark:text-pine-400 group-hover:scale-110 transition-transform">Fast</div>
+            <div class="text-xl font-bold text-pine-600 dark:text-pine-400 group-hover:scale-110 transition-transform">Fast</div>
             <div class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Delivery</div>
           </div>
         </div>
